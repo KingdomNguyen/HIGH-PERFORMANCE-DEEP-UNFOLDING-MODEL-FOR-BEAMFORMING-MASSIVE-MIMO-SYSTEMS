@@ -4,7 +4,7 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.10%2B-orange)](https://pytorch.org/)
 
-<img src="docs/architecture.png" alt="GPNet Architecture" width="600"/>
+
 
 *Deep Unfolded Gradient Projection Network for fast Beamforming Optimization*
 
@@ -41,7 +41,7 @@ There are some traditional methods:
   4. Project W to satisfy the power constraint: W = W / norm(W) * sqrt(P).
 ### Unfolded GP
 - What is Unfolding?: Converting an iterative algorithm (like GP) into a fixed-depth neural network (NN), where each layer corresponds to one iteration. Parameters (e.g., learning rate, transformation matrices) are learned from data.
-- Applied to GPNet (see GPNet class):
+- Applied to GPNet (see GPNet class): 
   
   Each layer is a modified GP step:
   + Instead of a fixed learning rate, it uses a learnable parameter eta[t].
@@ -106,6 +106,20 @@ Some results in different cases:
   GP_beamforming | Sum-Rate: 11.56 bps/Hz | Time: 0.1603s
   ```
 - Nt = 64, K=50, P = 1:
-
-
+  ```
+  Performance Comparison:
+  GPNet | Sum-Rate: 20.28 bps/Hz | Time: 0.1189s
+  ZF    | Sum-Rate: 1.86 bps/Hz | Time: 0.0051s
+  WMMSE | Sum-Rate: 13.04 bps/Hz | Time: 0.2315s
+  GP_beamforming | Sum-Rate: 19.90 bps/Hz | Time: 0.3670s
+  ```
+## References
+[1] N. Samuel, T. Diskin, and A. Wiesel, “Learning to detect,” IEEE Trans.
+Signal Process., vol. 67, no. 10, pp. 2554–2564, May 2019
+[2] Q. Hu, Y. Cai, Q. Shi, K. Xu, G. Yu, and Z. Ding, “Iterative
+algorithm induced deep-unfolding neural networks: Precoding design
+for multiuser MIMO systems,” IEEE Trans. Wireless Commun., vol. 20,
+no. 2, pp. 1394–1410, Feb. 2021.
+[3] M. Zhu, T.-H. Chang, and M. Hong, “Learning to beamform in heterogeneous massive MIMO networks,” IEEE Trans. Wireless Commun.,
+vol. 22, no. 7, pp. 4901–4915, Jul. 2023
 
