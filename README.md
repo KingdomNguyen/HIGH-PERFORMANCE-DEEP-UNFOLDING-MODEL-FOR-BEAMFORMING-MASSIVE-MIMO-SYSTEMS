@@ -116,10 +116,12 @@ Some results in different cases:
 ## References
 [1] N. Samuel, T. Diskin, and A. Wiesel, “Learning to detect,” IEEE Trans.
 Signal Process., vol. 67, no. 10, pp. 2554–2564, May 2019
+
 [2] Q. Hu, Y. Cai, Q. Shi, K. Xu, G. Yu, and Z. Ding, “Iterative
 algorithm induced deep-unfolding neural networks: Precoding design
 for multiuser MIMO systems,” IEEE Trans. Wireless Commun., vol. 20,
 no. 2, pp. 1394–1410, Feb. 2021.
+
 [3] M. Zhu, T.-H. Chang, and M. Hong, “Learning to beamform in heterogeneous massive MIMO networks,” IEEE Trans. Wireless Commun.,
 vol. 22, no. 7, pp. 4901–4915, Jul. 2023
 
