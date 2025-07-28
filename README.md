@@ -29,5 +29,5 @@ There are some traditional methods:
 ## Methodology
 ### Problem formulation
 Maximize sum-rate under power constraint: 
-$$ \max_{p} \sum_{k=1}^{K} R_k \quad \text{s.t.} \quad \sum_{k=1}^{K} p_k \leq P_{\text{max}} $$
+
 
